@@ -217,6 +217,42 @@ meta-ai-re-client/
 
 ---
 
+## 🔐 Security Impact
+
+This project demonstrates that Meta AI’s WebSocket interface can be **fully reconstructed and driven externally** via protocol-level reverse engineering.
+
+- **Replay Capability:** Captured binary frames can be modified and replayed with regenerated identifiers, enabling client impersonation patterns  
+- **Client Trust Weakness:** Server accepts reconstructed frames without strong client integrity verification  
+- **Input Injection Surface:** Direct protobuf field manipulation enables structured payload testing and prompt-level injection  
+- **Automation & Abuse Potential:** Replay enables high-frequency scripted interaction for rate-limit and anti-bot evaluation  
+- **Protocol Exposure:** Reveals internal message schema, streaming mechanics, and multi-WebSocket behavior  
+
+---
+
+## 🧪 Attack Scenarios
+
+- Replay modified requests to test **rate limiting and abuse controls**  
+- Inject payload variations to evaluate **input validation boundaries**  
+- Simulate unofficial clients to assess **bot detection mechanisms**  
+- Analyze streaming responses for **duplication or data leakage edge cases**  
+
+---
+
+## ⚠️ Responsible Use
+
+For **security research and authorized testing only**.  
+Do not use against systems without permission or in violation of platform policies.
+
+---
+
+## 🚀 Release
+
+**v1.0 — WebSocket RE Client**
+- Protocol capture, decode, and replay  
+- Dynamic protobuf schema recovery  
+- CLI with real-time streaming  
+- Session cleanup (stealth mode)  
+
 ## 🔬 Research Context
 
 This project demonstrates:
