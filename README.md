@@ -42,7 +42,7 @@ This tool captures, decodes, and replays Meta AI's WebSocket binary frames to en
 ### Prerequisites
 
 - Python 3.9+
-- A Meta AI account (free, via Facebook/Instagram login)
+- A Meta AI account (free, via google/Facebook/Instagram login)
 
 ### Setup
 
