@@ -48,8 +48,8 @@ This tool captures, decodes, and replays Meta AI's WebSocket binary frames to en
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/meta-ai-re-client.git
-cd meta-ai-re-client
+git clone https://github.com/Adithyan-Defender/meta-ai-websocket-re-client.git
+cd meta-ai-websocket-re-client
 
 # Install dependencies
 pip install -r requirements.txt
