@@ -1,0 +1,19 @@
+# Browser profile (contains session cookies/auth)
+meta_profile/
+
+# Captured session data (contains protobuf payloads)
+captured_session.json
+captured_payload.json
+all_frames.json
+
+# GraphQL & network diagnostics (contains conversation IDs, sentry keys)
+graphql_capture.json
+network_diagnostic.json
+
+# Response cache
+last_response.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
